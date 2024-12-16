@@ -1,0 +1,20 @@
+<b>
+name: actions
+
+on:
+  Triggers the workflow on push or pull request events but only for the "jessie baylin" branch
+ 
+    name: [ "jessie" ]
+  pull_requests: "jessie baylin"
+  merges: [ "jessie" ]
+
+
+  build: "jessie baylin" @checkouts
+    
+checkouts= actions@checkouts(unlimited)
+
+save
+
+</b>   
+
+    
