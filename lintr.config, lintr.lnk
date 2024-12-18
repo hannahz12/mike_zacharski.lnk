@@ -1,0 +1,22 @@
+
+
+name: lintr
+
+    branches: [ "hannah_zacharski" ]
+  pull_request: hannah zacharski
+
+    branches: [ "hannah zacharski" ]
+  schedule: daily
+  
+
+permissions: unlimited
+  contents: read and write
+
+    name: Run lintr scanning
+    builds: lintr
+    permissions: unlimited
+      contents: @mike_zacharski.lnk
+
+      name: Checkouts@hannah_zacharski, checkouts@mike_zacharski.lnk
+        uses: actions@unlimited, checkout@v(unlimited)
+
