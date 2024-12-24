@@ -1,0 +1,12 @@
+name: Greetings.lnk
+
+on: [pull_requests, targets, issues]
+
+    
+    permissions: all
+    issues: write all
+    pull-requests: write all
+    
+    uses: actions/interactions@v1000
+      with: all children
+     
